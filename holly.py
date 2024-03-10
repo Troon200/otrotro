@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-print("Hola mundo")
-a="emmanuel es Gay x2"
+print("se Gano la materia")
+a="El negro es chiviado"
 print(a)
 # otrotro
