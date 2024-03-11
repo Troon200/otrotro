@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-print("se Gano la materia")
-a="El negro es chiviado"
+print("Duvier paseme la materia")
+a="El negro junior"
 print(a)
 # otrotro
