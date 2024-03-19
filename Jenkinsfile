@@ -14,7 +14,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    def prometheusURL = 'http://prometheus:9090'
+                    def prometheusURL = 'http://10.195.146.2:9090'
                     def metricQuery = 'up'
                     def response = sh(script: "curl -s '${prometheusURL}/api/v1/query?query=${metricQuery}'", returnStdout: true).trim()
                     
