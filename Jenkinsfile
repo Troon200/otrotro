@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('Connection Git') {
             steps {
-                echo "a las 1"
+                git branch: 'main', url: 'https://github.com/Troon200/otrotro.git'
             }
         }
         stage('Test') {
@@ -11,7 +11,7 @@ pipeline {
                 echo "a las 2"
             }
         }
-        stage('Deploy') {
+        stage('Connection prom') {
             steps {
                 script {
                     def prometheusURL = 'http://10.195.146.2:9090'
